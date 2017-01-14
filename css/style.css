@@ -1,0 +1,26 @@
+.page-header{
+	background-color: grey;
+}
+
+body {
+  background-color: grey;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:80px;
+   width:100%;
+   background:#999;
+   text-align: center;
+   background: grey;
+   color: black;
+   padding: 15px 5px 15px 10px;
+}
+
+#footer a {
+	color: black;
+	font-size: 32px;
+	padding: 20px;
+}
