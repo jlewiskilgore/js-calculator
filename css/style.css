@@ -1,3 +1,31 @@
+body {
+   text-align: center;
+}
+
+#calculator {
+   text-align: center;
+   background-color: black;
+   display: inline-block;
+}
+
+#results-box {
+   height: 50px;
+   width: 300px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.num-button {
+   height: 100px;
+   width: 100px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
 .page-header{
 	background-color: grey;
 }
