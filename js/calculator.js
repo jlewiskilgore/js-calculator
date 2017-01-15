@@ -1,7 +1,14 @@
 
 function calculate() {
 	currentEquation = document.getElementById('results-box');
-	currentEquation.value = eval(currentEquation.value);
+	lastInput = (currentEquation.value).slice(-1);
+
+	if(!isMathSymbol(lastInput)) {
+		currentEquation.value = eval(currentEquation.value);
+	}
+	else {
+		currentEquation.value = 'Error';
+	}
 }
 
 function clearEquation () {
