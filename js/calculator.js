@@ -4,7 +4,10 @@ function calculate() {
 	currentEquation = document.getElementById('results-box');
 	lastInput = (currentEquation.value).slice(-1);
 
-	if(!isMathSymbol(lastInput)) {
+	if(lastInput == '') {
+		return;
+	}
+	else if(!isMathSymbol(lastInput)) {
 		currentEquation.value = eval(currentEquation.value);
 	}
 	else {
@@ -47,4 +50,5 @@ function clearError() {
 	if(currentEquation.value === 'Error') {
 		currentEquation.value = "";
 	}
+		console.log(currentEquation.value);
 }
