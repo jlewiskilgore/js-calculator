@@ -3,7 +3,8 @@
 // }
 
 function calculate() {
-	alert('calculating');
+	currentEquation = document.getElementById('results-box');
+	currentEquation.value = eval(currentEquation.value);
 }
 
 function addValueToEquation(newValue) {
