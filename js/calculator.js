@@ -1,5 +1,6 @@
 
 function calculate() {
+	clearError();
 	currentEquation = document.getElementById('results-box');
 	lastInput = (currentEquation.value).slice(-1);
 
@@ -17,6 +18,7 @@ function clearEquation () {
 }
 
 function addValueToEquation(newValue) {
+	clearError();
 	currentEquation = document.getElementById('results-box');
 	
 	//If newValue is "+","-","*","/" verify that the last character is a number
@@ -37,5 +39,12 @@ function isMathSymbol(inputChar) {
 			break;
 		default:
 			return false;
+	}
+}
+
+function clearError() {
+	currentEquation = document.getElementById('results-box');
+	if(currentEquation.value === 'Error') {
+		currentEquation.value = "";
 	}
 }
