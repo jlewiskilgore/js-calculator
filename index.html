@@ -19,6 +19,7 @@
 	<h1 align="center">Javascript Calculator</h1>
 	<br>
 	<div id="calculator" class="container-fluid">
+		<input class="clear-button" type="button" value="Clear" onclick="clearEquation()">
 		<input id="results-box">
 		<br>
 		<input class="num-button" type="button" value="9" onclick="addValueToEquation(9)">
@@ -37,7 +38,7 @@
 		<input class="num-button" type="button" value="x" onclick="addValueToEquation('*')">
 		<br>
 		<input class="num-button" type="button" value="0" onclick="addValueToEquation(0)">
-		<input class="num-button" type="button" value="=" onclick="calculate()">
+		<input class="equal-button" type="button" value="=" onclick="calculate()">
 		<input class="num-button" type="button" value="/" onclick="addValueToEquation('/')">
 	</div>
 

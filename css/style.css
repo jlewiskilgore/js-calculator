@@ -10,15 +10,35 @@ body {
 
 #results-box {
    height: 50px;
-   width: 300px;
+   width: 350px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   text-align: center;
+   font-size: 16pt;
+}
+
+.num-button {
+   height: 100px;
+   width: 100px;
    margin-top: 10px;
    margin-bottom: 10px;
    margin-left: 10px;
    margin-right: 10px;
 }
 
-.num-button {
+.equal-button {
    height: 100px;
+   width: 225px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.clear-button {
+   height: 50px;
    width: 100px;
    margin-top: 10px;
    margin-bottom: 10px;
