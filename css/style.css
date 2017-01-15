@@ -6,6 +6,8 @@ body {
    text-align: center;
    background-color: black;
    display: inline-block;
+   overflow: hidden;
+   white-space: nowrap;
 }
 
 #results-box {
