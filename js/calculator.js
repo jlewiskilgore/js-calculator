@@ -1,8 +1,8 @@
 
 function calculate() {
 	clearError();
-	currentEquation = document.getElementById('results-box');
-	lastInput = (currentEquation.value).slice(-1);
+	var currentEquation = document.getElementById('results-box');
+	var lastInput = (currentEquation.value).slice(-1);
 
 	if(lastInput == '') {
 		return;
@@ -16,16 +16,16 @@ function calculate() {
 }
 
 function clearEquation () {
-	currentEquation = document.getElementById('results-box');
+	var currentEquation = document.getElementById('results-box');
 	currentEquation.value = "";
 }
 
 function addValueToEquation(newValue) {
 	clearError();
-	currentEquation = document.getElementById('results-box');
+	var currentEquation = document.getElementById('results-box');
 	
 	//If newValue is "+","-","*","/" verify that the last character is a number
-	lastInput = (currentEquation.value).slice(-1);
+	var lastInput = (currentEquation.value).slice(-1);
 
 	if(!isMathSymbol(newValue) || (isMathSymbol(newValue) && !isMathSymbol(lastInput))) {
 		currentEquation.value = (currentEquation.value + newValue);
@@ -46,7 +46,7 @@ function isMathSymbol(inputChar) {
 }
 
 function clearError() {
-	currentEquation = document.getElementById('results-box');
+	var currentEquation = document.getElementById('results-box');
 	if(currentEquation.value === 'Error') {
 		currentEquation.value = "";
 	}
